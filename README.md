@@ -5,7 +5,7 @@ Student ID: 700745451
  
  Course: CS 5720 (CRN 23216)
  
- Description: This assignment consists of program snippets that performs the requirements given, using python funcations and lists.
+ Description: This assignment consists of program snippets that performs the requirements given, using python funcations and lists. The Input and Output text files used in the program is also attached in this repository.
  
  For more details, please find the below the required links,
  Google Drive link for program file (Notebook): https://drive.google.com/file/d/1Tap2RSUAW_aPGhJ-FkR42rYhRgOBDh1B/view?usp=share_link
