@@ -5,7 +5,7 @@ Student ID: 700745451
  
  Course: CS 5720 (CRN 23216)
  
- Description: This assignment consists of program snippets that performs functions and arithmetic operations using python programming.
+ Description: This assignment consists of program snippets that performs the requirements given, using python funcations and lists.
  
  For more details, please find the below the required links,
  Google Drive link for program file (Notebook): https://drive.google.com/file/d/1Tap2RSUAW_aPGhJ-FkR42rYhRgOBDh1B/view?usp=share_link
