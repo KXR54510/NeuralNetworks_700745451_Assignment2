@@ -1,0 +1,76 @@
+#Program 1
+#get the name from user
+first_name = str(input("Enter First Name:"));
+last_name = str(input("Enter Last Name:"));
+
+#fullname function call
+full_name = str (fullname(first_name,last_name));
+print("Your Full Name: " + full_name);
+
+#alternate String function call
+alternate_String = str (string_alternative(full_name));
+print(alternate_String);
+
+def fullname(fname,lname):
+    fullName = (fname + " " + lname); #concat first and last name
+    return fullName; #return full name
+
+def string_alternative(altStr):
+    resultStr = "";
+    for i in range(0,len(altStr),2):
+        resultStr += altStr[i]; #append alternate characters from the input string
+    return resultStr; #return the resultant string
+    
+
+
+#Program 2
+#open file in read mode
+inputFile = open("input.txt", "r");
+
+#create a dictionary
+wordCount = dict();
+
+#loop through each line of the file
+for lines in inputFile:
+    words = lines.split(); #split the line into words
+    
+    #iterate over each word in line
+    for word in words:
+        
+        #check if the word is already in dictionary
+        if word in wordCount:
+            wordCount[word] = wordCount[word] + 1; #increment the count by 1
+        else:
+            wordCount[word] = 1; #add the entry to dictionary with count 1
+            
+#open the file in write mode to store the results
+outputFile = open("output.txt", "w");
+
+outputFile.writelines("Word Count:");
+print("Word Count:")
+#for loop is used to print the results one by one
+for key in list(wordCount.keys()):
+    print('%s: %s' % (key,wordCount[key])); #print the dictionary content
+    outputFile.write('\n%s: %s' % (key,wordCount[key])); #store in the output file
+    
+#close file
+outputFile.close();
+
+
+
+#Program 3
+#create an empty list
+height_list = []
+
+#get the list size and input from the user
+noOfCustomers = int (input("Enter the No. of Customers: "))
+for i in range(0,noOfCustomers):
+    item = int(input())
+    height_list.append(item)
+
+#print the input list
+print("Height in Inches: ", height_list)
+
+#create the new list of height in cm using list comprehension
+newList = [x*2.54 for x in height_list]
+print ("Height in Centimeters: ",newList)
